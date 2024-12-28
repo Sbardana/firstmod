@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "firstmod",
+	"description": "This is a mod I made to screw around, plain and simple!",
+	"authors": [
+		"Me! (Sbardana)"
+	],
+	"contact": {
+		"homepage": "none yet :/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sbardana.firstmod.Firstmod"
+		],
+		"fabric-datagen": [
+			"net.sbardana.firstmod.FirstmodDataGenerator"
+		],
+		"client": [
+			"net.sbardana.firstmod.FirstmodClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
